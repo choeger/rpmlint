@@ -44,7 +44,7 @@ def process_diff_args(argv):
                         help="""file property to ignore when calculating differences.
                                 Valid values are: S (size), M (mode), 5 (checksum), D (device),
                                 N (inode), L (number of links), V (vflags), U (user), G (group),
-                                F (digest), T (time)""")
+                                F (flags), T (time)""")
     parser.add_argument('-e', '--exclude', metavar='GLOB', nargs='+', default=None,
                         help="""Paths to exclude when showing differences.
                                 Takes a glob. When absolute (starting with /)
